@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="Container">
+            <h1 class="titulo">Formulario</h1>
+            <form action="Usuario.php" method="post">
+                <label class="title_imputs" for="nome">Insira seu
+                    nome:</label><br>
+                <input class="Inputs" type="text" id="nome" name="nome">
+                <br>
+                <label class="title_imputs" for="email">Insira seu
+                    email:</label><br>
+                <input class="Inputs" type="email" id="email" name="email">
+                <br>
+                <label class="title_imputs" for="idade">Insira seu
+                    idade:</label><br>
+                <input class="Inputs" type="text" id="idade" name="idade">
+                <br>
+                <label class="title_imputs" for="telefone">Insira seu
+                    telefone:</label><br>
+                <input class="Inputs" type="text" id="telefone" name="telefone">
+                <br>
+                <button class="enviar" onclick="mostrarPopup()"
+                    type="button">Enviar</button>
+
+                <!-- Pop-up -->
+                <div class="sobreposicao" id="sobreposicao-popup">
+                    <div class="conteudo" id="conteudo-popup">
+                        <h2>Sucesso!</h2>
+                        <p>Os dados foram enviados <br> com Exitô !
+                        </p>
+                        <button type="submit" class="fechar"
+                            id="fechar-popup">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
